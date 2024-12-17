@@ -30,7 +30,6 @@ function App() {
     getAllPokemon()
   }, [])
 
-
   return (
     <div className="App">
         {/* render pokemons  */}
@@ -43,7 +42,9 @@ function App() {
             key={index}
           />
         )}
+        <button onClick={()=>getAllPokemon()}>Load More</button>
     </div>
+    
   );
 }
 
